@@ -7,15 +7,25 @@ const SectionContainer = styled.div`
   display: flex;
   flex-direction: column;
   @media (min-width: 768px) {
-    flex-direction: row;
+   
   }
+`;
+const StyledImageGrid = styled(ImageGrid)`
+  flex: 1; // Takes up half of the space
+  // additional styles...
+`;
+
+const StyledAccomplishments = styled(Accomplishments)`
+  flex: 1; // Takes up the other half
+  // additional styles...
 `;
 
 const NewSection = () => {
     return (
         <SectionContainer>
-            <ImageGrid />
-            <Accomplishments />
+            <StyledImageGrid
+            />
+            <StyledAccomplishments />
         </SectionContainer>
     );
 };
